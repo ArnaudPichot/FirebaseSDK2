@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>FirebaseSdkQuest</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/2.7.0/firebaseui.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="scriptsdk.js"></script>
+</head>
+
+<body>
+
+<div style="text-align:center">
+<h1>
+Welcome to Ulysse 31 !
+</h1>
+<img width="300" alt="Logo" src="http://www.cranemou.com/wp-content/uploads/2012/02/nono-le-petit-robot-300x300.png">
+</div>
+
+<div id="firebaseui-auth-container"></div>
+<button onclick="logOut()">Sign Out</button>
+<div id="sign-in-status"></div>
+<div id="sign-in"></div>
+<div id="account-details"></div>
+
+<div id="showUser">
+<h2>A list of The Walking Dead Characters: </h2>
+
+<div>
+<ul id="character-list">
+</ul>
+</div>
+
+<div>
+<h3>Add a name on the list :</h3>
+<input type="text" name='name' id="Name">
+<br>
+<button type="button" onclick="PushOnFirebase()">Send characters</button>
+</div>
+</div>
+</body>
+
+</html>
